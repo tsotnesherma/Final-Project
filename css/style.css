@@ -1,0 +1,126 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@200&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Lato&family=Poppins:wght@200&family=Ubuntu:wght@300&display=swap');
+
+/* End of Fonts */
+
+
+
+/* Global Settings */
+img{
+    width: 100%;
+}
+section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+a{
+    font-weight: 700;
+    transition: all 0.4s ease;
+    
+}
+/* End of Global Settings */
+
+
+
+/* Styles of NavBar */
+.navbar{
+    border-bottom: 1px solid rgba(0,0,0,0.11);
+    
+}
+
+
+
+.navbar .nav-link{
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    
+    
+    
+}
+
+.navbar-brand{
+    width: 50px;
+    cursor: pointer;
+  
+}
+.navbar-light .navbar-nav .nav-link.active{
+    color: blue;
+}
+.nav-link{
+    color: black !important;
+}
+.nav-link:hover{
+    color: rgb(255,0,212)!important;
+}
+.nav-link{
+    position: relative;
+    padding-bottom: 8px;
+    cursor: pointer;
+}
+.nav-link::after{
+   margin: auto;
+   display: block;
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: black;
+    transition: width 0.35s ease-out;
+}
+.nav-link:hover::after{
+    width: 100%;
+}
+
+/* End of styling NavBar */
+
+
+/* Styles of Section-1 */
+#home {
+    background: linear-gradient(rgba(17, 36, 90, 0.8), rgba(17, 36, 90, 0.8)), url(..//images/rectangle-17.png);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+   
+    display: flex;
+    align-items: center;
+ }
+ 
+ #home h1 {
+    font-weight: 700;
+ }
+ 
+ #home p {
+    max-width: 550px;
+    margin: 18px auto;
+ }
+ .btn{
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 23px 28px;
+    width: 200px;
+    height: 72px;
+    border-radius: 50px;
+    
+    
+}
+.btn-brand{
+    background-color:#325DFF;
+    transition: 0.5s;
+    color: white;
+}
+.btn-brand:hover{
+   background-color: #193bb8;
+}
+p, h1, .btn{
+    margin-top: 30px;
+    color: white;
+
+}
+/* End of styling Section-1 */
+
+
+

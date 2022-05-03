@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Ubuntu:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@200&family=Ubuntu:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Lato&family=Poppins:wght@200&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 
 /* End of Fonts */
 
@@ -12,8 +13,8 @@ img{
     width: 100%;
 }
 section{
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 77px;
+    padding-bottom: 77px;
 }
 a{
     font-weight: 700;
@@ -83,18 +84,24 @@ a{
     min-height: 100vh;
     background-size: cover;
     background-position: center;
-   
     display: flex;
     align-items: center;
  }
  
  #home h1 {
-    font-weight: 700;
+    font-weight: lighter;
+    font-size: 70px;
+    font-family: lato;
+   
  }
  
  #home p {
     max-width: 550px;
     margin: 18px auto;
+   font-family: poppins;
+  line-height: 1.5;
+   
+    
  }
  .btn{
     font-weight: bold;
@@ -117,10 +124,142 @@ a{
 }
 p, h1, .btn{
     margin-top: 30px;
-    color: white;
+    color: black;
 
 }
+.col-img{
+background-image: url(../images/building.png);
+background-position: center;
+background-size: cover;
+min-height :500px;
+}
+.col-md-10 h1{
+font-size: 50px;
+color: black;
+font-family: lato;
+}
+.col-md-10 p{
+    color: grey;
+    font-size: 16px;
+    font-family:poppins;
+}
+
 /* End of styling Section-1 */
 
 
 
+
+.section-intro{
+  
+    margin-bottom: 60px;
+  
+    
+}
+/* Services */
+.section-intro .hline {
+    width: 100px;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    margin: 16px auto 0 auto;
+}
+.col-12 h1{
+    font-size: 35px;
+    font-family: lato;
+} 
+
+
+.service {
+    padding: 30px;
+   background: #fff;
+   box-shadow: 0px 15px 30px rgba(74, 105, 192, 0.8);
+   background: rgba(0,0,0,0.11);
+   cursor: pointer;
+   transition: transform 0.5s, background 0.5s;
+  
+}
+.service:hover{
+    background: #5d64ca;
+    transform: scale(1.05);
+}
+
+.service h5 {
+    margin-top: 24px;
+    margin-bottom: 14px;
+    font-size: 18px;
+    font-family: lato;
+    
+}
+
+.service img {
+width: 30px;
+height: 30px;
+}
+
+
+/* End of Styling Services */
+
+/* Styles of Portfolio */
+.portfolio-item {
+    overflow: hidden;
+    position: relative;
+ }
+  .portfolio-item img,
+  .portfolio-item .portfolio-overlay {
+     transition: all 0.4s ease;
+  }
+ 
+ .portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 36, 90, 0.9);
+    display: flex;
+    align-items: flex-end;
+    padding: 30px;
+    opacity: 0;
+ }
+ 
+ .portfolio-overlay h3,
+ .portfolio-overlay h6 {
+    color: #fff;
+    font-size: 30px;
+    font-family:  'Oswald', sans-serif;;
+ }
+ 
+ .portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+ }
+ 
+ .portfolio-item:hover img {
+    transform: scale(1.2);
+ }
+ .portfolio-item{
+     height: 280px;
+ }
+
+ 
+/* End of Stylying Portfolio */
+
+
+/* Styles of Projects */
+#projects{
+    background: url(../images/Image.png);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+ }
+ #projects img{
+     width: 44px;
+     height: 56px;
+     cursor: pointer;
+ }
+#projects p{
+    font-family: poppins;
+    font-weight: 500;
+    line-height: 1.5;
+}
+/* End of Styling Projects */

@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Ubuntu:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@200&family=Ubuntu:wght@300&display=swap');
@@ -18,6 +25,8 @@ section{
 }
 a{
     font-weight: 700;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
     transition: all 0.4s ease;
     
 }
@@ -44,8 +53,10 @@ a{
 }
 
 .navbar-brand{
-    width: 50px;
+    height: 45px;
+    width: 118px;
     cursor: pointer;
+
   
 }
 .navbar-light .navbar-nav .nav-link.active{
@@ -69,6 +80,8 @@ a{
     width: 0%;
     height: 3px;
     background-color: black;
+    -webkit-transition: width 0.35s ease-out;
+    -o-transition: width 0.35s ease-out;
     transition: width 0.35s ease-out;
 }
 .nav-link:hover::after{
@@ -80,12 +93,18 @@ a{
 
 /* Styles of Section-1 */
 #home {
-    background: linear-gradient(rgba(17, 36, 90, 0.8), rgba(17, 36, 90, 0.8)), url(..//images/rectangle-17.png);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(31, 66, 161, 0.8))), url(..//images/rectangle-17.png);
+    background: -o-linear-gradient(rgba(17, 36, 90, 0.8), rgba(31, 66, 161, 0.8)), url(..//images/rectangle-17.png);
+    background: linear-gradient(rgba(17, 36, 90, 0.8), rgba(31, 66, 161, 0.8)), url(..//images/rectangle-17.png);
     min-height: 100vh;
     background-size: cover;
     background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
  }
  
  #home h1 {
@@ -116,6 +135,8 @@ a{
 }
 .btn-brand{
     background-color:#325DFF;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
     color: white;
 }
@@ -144,7 +165,7 @@ font-family: lato;
     font-family:poppins;
 }
 
-/* End of styling Section-1 */
+/* End of styling Home */
 
 
 
@@ -162,7 +183,7 @@ font-family: lato;
     background-color: rgb(0, 0, 0);
     margin: 16px auto 0 auto;
 }
-.col-12 h1{
+.section-intro h1{
     font-size: 35px;
     font-family: lato;
 } 
@@ -171,15 +192,22 @@ font-family: lato;
 .service {
     padding: 30px;
    background: #fff;
-   box-shadow: 0px 15px 30px rgba(74, 105, 192, 0.8);
+   -webkit-box-shadow: 0px 15px 30px rgba(74, 105, 192, 0.8);
+           box-shadow: 0px 15px 30px rgba(74, 105, 192, 0.8);
    background: rgba(0,0,0,0.11);
    cursor: pointer;
+   -webkit-transition: background 0.5s, -webkit-transform 0.5s;
+   transition: background 0.5s, -webkit-transform 0.5s;
+   -o-transition: transform 0.5s, background 0.5s;
    transition: transform 0.5s, background 0.5s;
+   transition: transform 0.5s, background 0.5s, -webkit-transform 0.5s;
   
 }
 .service:hover{
     background: #5d64ca;
-    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
 }
 
 .service h5 {
@@ -205,6 +233,8 @@ height: 30px;
  }
   .portfolio-item img,
   .portfolio-item .portfolio-overlay {
+     -webkit-transition: all 0.4s ease;
+     -o-transition: all 0.4s ease;
      transition: all 0.4s ease;
   }
  
@@ -215,8 +245,12 @@ height: 30px;
     width: 100%;
     height: 100%;
     background-color: rgba(17, 36, 90, 0.9);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     padding: 30px;
     opacity: 0;
  }
@@ -233,7 +267,9 @@ height: 30px;
  }
  
  .portfolio-item:hover img {
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
  }
  .portfolio-item{
      height: 280px;
@@ -244,22 +280,145 @@ height: 30px;
 
 
 /* Styles of Projects */
-#projects{
+.projects{
     background: url(../images/Image.png);
     min-height: 100vh;
     background-size: cover;
     background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
  }
- #projects img{
+ .projects img{
      width: 44px;
      height: 56px;
      cursor: pointer;
  }
-#projects p{
+.projects p{
     font-family: poppins;
     font-weight: 500;
     line-height: 1.5;
 }
+
+
 /* End of Styling Projects */
+
+/* Styles of Testimonials */
+#testimonials img {
+    width: 65px;
+    height: 65px;
+    border-radius: 100px;
+    transition: all 0.4s ease;
+ }
+ 
+ #testimonials .nav-pills .nav-link.active {
+    background-color: transparent;
+ }
+ 
+ #testimonials .nav-pills .nav-link.active img {
+    transform: scale(1.3);
+ }
+ 
+ .review .stars {
+    color: gold;
+ }
+ 
+ .review p {
+    max-width: 720px;
+    margin: 24px auto;
+    font-style: italic;
+    line-height: 1.5;
+    font-family: lato;
+    font-weight: bold
+ }
+ .review h5,h6 {
+     line-height: 2;
+     font-weight: bold;
+     font-family: poppins;
+ }
+ 
+ 
+/* End of Styling Testimonials */
+
+
+/* Styles of Contact */
+
+.form-label{
+    font-size: 20px;
+    font-family: poppins;
+    font-weight: bold;
+    
+}
+#contact,::placeholder{
+    font-size: 18px;
+    font-family: lato;
+
+}
+#contact{
+    background: url(../images/contact-pic.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+   
+ }
+
+/* End of Styling Contact */
+
+/* Styles of Footer */
+
+footer{
+    background-color: black;
+    height: auto;
+    width: 100vw;
+    font-family: poppins;
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: capitalize;
+line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 16px;
+}
+.footer-bottom p{
+    font-size: 16px;
+    font-family: poppins;
+    color: #fff;
+}
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: arem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    color: white;
+
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color 0.5s ease;
+}
+.socials a:hover i{
+    color: #193bb8;
+}
+/* End of Styling footer */
